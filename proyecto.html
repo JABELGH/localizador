@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Reloj, Fecha y Ubicación</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <h1>Tiempo & Ubicación</h1>
+      <p class="subtitle">Reloj en vivo, fecha y tu ubicación (con permiso)</p>
+    </header>
+    <section class="card">
+      <div class="time-section">
+        <div class="big" id="time">--:--:--</div>
+        <div class="small" id="date">Cargando fecha...</div>
+      </div>
+      <hr />
+      <div class="location-section">
+        <div class="label">Ubicación</div>
+        <div id="location">Solicitando permiso para obtener ubicación…</div>
+        <div class="coords" id="coords"></div>
+        <button id="refreshLocation" class="btn">Actualizar ubicación</button>
+      </div>
+    </section>
+    <footer class="footer">
+      <small>Hecho con ❤️ · Local time via browser · Reverse-geocoding por OpenStreetMap</small>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
